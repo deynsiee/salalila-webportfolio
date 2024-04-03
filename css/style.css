@@ -155,6 +155,13 @@ header.sticky{
     border-bottom: 1px solid #4e5055;
 }
 
+.blanksec{
+    margin-bottom: -80px;
+}
+
+.proj1{
+    margin-bottom: -120px;
+}
 .about{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px,auto));
@@ -350,7 +357,7 @@ header.sticky{
 
 
 
-.projects {
+.projects, .proj1 {
     background: var(--sb-track-color);
     
 }
@@ -529,4 +536,43 @@ footer {
 
 .contact-text i{
     font-size: 40px;
+}
+
+
+.personal-info{
+    background-color: var(--second-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0px,auto));
+    align-items: center;
+    gap: 4rem;
+}
+
+.personal-info-img img{
+    width: 100%;
+    height: auto;
+}
+
+.personal-info-img img:hover{
+    transform: translateY(-10px);
+    transition: all ease 1s;
+
+
+}
+
+.personal-info h1 {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    color: var(--main-color);
+    font-size: 46.2px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.personal-info p, li {
+    margin-top: 20px;
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 1rem;
 }
