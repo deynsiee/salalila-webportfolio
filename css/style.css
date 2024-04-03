@@ -114,6 +114,7 @@ section{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    
 }
 
 .hero-text h1 {
@@ -126,9 +127,10 @@ section{
     color: var(--other-color);
     font-size: 4.5rem;
     font-style: italic;
-    margin-bottom: 15px ;
+    margin-bottom: -5px ;
     word-spacing: 10px;
 }
+
 
 .btn {
     display: inline-block;
@@ -155,7 +157,7 @@ header.sticky{
     border-bottom: 1px solid #4e5055;
 }
 
-.blanksec{
+.blanksec, .blanksec2{
     margin-bottom: -80px;
 }
 
@@ -167,11 +169,14 @@ header.sticky{
     grid-template-columns: repeat(auto-fit, minmax(200px,auto));
     align-items: center;
     gap: 4rem;
+    margin-top: -70px;
+
 }
 
 .about-img img{
-    width: 100%;
+    width: 80%;
     height: auto;
+    text-align: center;
 }
 
 .about-img img:hover{
@@ -184,36 +189,42 @@ header.sticky{
 .about-text h1 {
     font-family: "Playfair Display", serif;
     font-style: italic;
-    color: var(--main-color);
+    color: var(--text-color);
     font-size: 46.2px;
     font-weight: 700;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .about-text p {
     color: var(--text-color);
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .education {
     background: var(--bg-color);
     margin-top: -150px;
 
+
+
 }
+
 
 .text-center {
     text-align: center;
 }
 
 .text-center h1 {
-    color: var(--text-color);
+    color: var(--other-color);
     font-family: "Playfair Display", serif;
     font-style: italic;
     font-size: 3.575rem;
     margin-bottom: 10px;
+    
 
 }
 
@@ -230,6 +241,8 @@ header.sticky{
     padding: 45px 30px;
     border-radius: 0.8rem;
     transition: all ease .50s;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(208,203,77,1) 100%);
 }
 
 .education i {
@@ -280,7 +293,8 @@ header.sticky{
 
 .cert {
     background: var(--bg-color);
-    margin-top: -150px;
+    margin-top: -100px;
+    
 
 }
 
@@ -310,6 +324,8 @@ header.sticky{
     padding: 45px 30px;
     border-radius: 0.8rem;
     transition: all ease .50s;
+    background: rgb(245,240,233);
+    background: radial-gradient(circle, rgba(245,240,233,1) 0%, rgba(250,225,196,1) 100%);
 }
 
 .cert-box a h2{
@@ -540,7 +556,8 @@ footer {
 
 
 .personal-info{
-    background-color: var(--second-color);
+    background: rgb(244,241,232);
+    background: radial-gradient(circle, rgba(244,241,232,1) 0%, rgba(246,233,195,1) 100%);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0px,auto));
     align-items: center;
@@ -558,21 +575,93 @@ footer {
 
 
 }
+.pinfo-text {
+    border: 10px dotted #B4AE16;
+    border-radius: 30px;
+    padding: 50px;
+}
 
 .personal-info h1 {
     font-family: "Playfair Display", serif;
     font-style: italic;
-    color: var(--main-color);
+    color: var(--text-color);
     font-size: 46.2px;
     font-weight: 700;
     margin-bottom: 30px;
+    text-align: center;
+}
+
+.personal-info ul strong {
+    font-size: 20px;
+    color: #827d00;
+    text-transform: uppercase;
+    margin-top: 100px;
 }
 
 .personal-info p, li {
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 10px;
     color: var(--text-color);
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
+
+.transcript {
+    background-color: var(--sb-track-color);
+}
+.transcript h1 {
+    margin-top: 100px;
+}
+.transcript table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .transcript td{
+    border: 2px solid var(--text-color);
+    text-align: center;
+    padding: 8px;
+    background-color: var(--second-color);
+  }
+  .transcript th {
+    border: 2px solid var(--text-color);
+    background-color: var(--other-color);
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .transcript td:hover{
+    background-color: var(--main-color);
+    color: #ffffff;
+    transition: 0.5s;
+    font-weight: bold;
+
+  }
+
+.blanksec, .proj1, .blanksec2 {
+    background: rgb(180,174,22);
+    background: linear-gradient(232deg, rgba(180,174,22,1) 0%, rgba(250,225,196,1) 100%);
+}
+
+.filler{
+    background: rgb(180,174,22);
+    background: linear-gradient(83deg, rgba(180,174,22,1) 0%, rgba(250,225,196,1) 100%);
+}
+
+.personal-info a, .personal-info a:visited, .about a, .about a:visited {
+    color: #827d00;
+    text-align: center;
+    display: block;
+    font-size: 120%;
+
+}
+.personal-info a:hover, .about a:hover{
+    color: #3d3b00;
+    font-size: 130%;
+}
+
+
